@@ -1,0 +1,145 @@
+============================================================
+DEEPMILL SETUP PLANNER - BASELINE vs REFINED COMPARISON
+============================================================
+Part: Left side Traitener
+File: Step Files/Left side Traitener.step
+
+Loading B-Rep Graph...
+[FAST] Faces: 106, Time: 0.683s
+Graph: 106 faces, 274 edges
+
+Face Types:
+  Plane: 65
+  Cylinder: 41
+
+============================================================
+CONFIGURATION: STRICT BASELINE
+============================================================
+  plane_head_on_tolerance_deg = 0.0
+  plane_side_cut_tolerance_deg = 0.0
+  cylinder_axis_tolerance_deg = 0.0
+
+[DeepMillAudit] Preprocessing Geometry 1659122252240 (Mesh -> PointCloud -> Octree)...
+[DeepMillAudit] Running DeepMill Inference for axis (1.0, 0.0, 0.0)
+    [Config] Head-on: 0.0░, Side-cut: 0.0░, Cyl: 0.0░
+  +X: 83/106 faces [adjacent_access:17, axis_aligned:1, head_on:29, side_cut:36]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (-1.0, 0.0, 0.0)
+    [Config] Head-on: 0.0░, Side-cut: 0.0░, Cyl: 0.0░
+  -X: 83/106 faces [adjacent_access:17, axis_aligned:1, head_on:29, side_cut:36]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 1.0, 0.0)
+    [Config] Head-on: 0.0░, Side-cut: 0.0░, Cyl: 0.0░
+  +Y: 105/106 faces [adjacent_access:2, axis_aligned:38, head_on:31, side_cut:34]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, -1.0, 0.0)
+    [Config] Head-on: 0.0░, Side-cut: 0.0░, Cyl: 0.0░
+  -Y: 105/106 faces [adjacent_access:2, axis_aligned:38, head_on:31, side_cut:34]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 0.0, 1.0)
+    [Config] Head-on: 0.0░, Side-cut: 0.0░, Cyl: 0.0░
+  +Z: 79/106 faces [adjacent_access:12, axis_aligned:2, head_on:5, side_cut:60]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 0.0, -1.0)
+    [Config] Head-on: 0.0░, Side-cut: 0.0░, Cyl: 0.0░
+  -Z: 79/106 faces [adjacent_access:12, axis_aligned:2, head_on:5, side_cut:60]
+
+=== Computing Minimum Setup Cover ===
+  Operation 1: +Y covers 105 new faces
+  Operation 2: +Z covers 1 new faces
+
+============================================================
+DEEPMILL SETUP PLAN
+============================================================
+Total Setups Required: 2
+Total Faces: 106
+Covered: 106 (100.0%)
+
+Operation 1: +Y (0.00, 1.00, 0.00)
+  Covers: 105 faces total
+  New in this op: 105 faces
+  Face IDs (sample): [0, 1, 2, 3, 4] ...
+Operation 2: +Z (0.00, 0.00, 1.00)
+  Covers: 79 faces total
+  New in this op: 1 faces
+  Face IDs: [20]
+============================================================
+
+============================================================
+CONFIGURATION: REFINED
+============================================================
+  plane_head_on_tolerance_deg = 15.0
+  plane_side_cut_tolerance_deg = 15.0
+  cylinder_axis_tolerance_deg = 10.0
+
+[DeepMillAudit] Preprocessing Geometry 1659122252240 (Mesh -> PointCloud -> Octree)...
+[DeepMillAudit] Running DeepMill Inference for axis (1.0, 0.0, 0.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  +X: 83/106 faces [adjacent_access:17, axis_aligned:1, head_on:29, side_cut:36]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (-1.0, 0.0, 0.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  -X: 83/106 faces [adjacent_access:17, axis_aligned:1, head_on:29, side_cut:36]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 1.0, 0.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  +Y: 105/106 faces [adjacent_access:2, axis_aligned:38, head_on:31, side_cut:34]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, -1.0, 0.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  -Y: 105/106 faces [adjacent_access:2, axis_aligned:38, head_on:31, side_cut:34]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 0.0, 1.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  +Z: 79/106 faces [adjacent_access:12, axis_aligned:2, head_on:5, side_cut:60]
+[DeepMillAudit] Geometry 1659122252240 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 0.0, -1.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  -Z: 79/106 faces [adjacent_access:12, axis_aligned:2, head_on:5, side_cut:60]
+
+=== Computing Minimum Setup Cover ===
+  Operation 1: +Y covers 105 new faces
+  Operation 2: +Z covers 1 new faces
+
+============================================================
+DEEPMILL SETUP PLAN
+============================================================
+Total Setups Required: 2
+Total Faces: 106
+Covered: 106 (100.0%)
+
+Operation 1: +Y (0.00, 1.00, 0.00)
+  Covers: 105 faces total
+  New in this op: 105 faces
+  Face IDs (sample): [0, 1, 2, 3, 4] ...
+Operation 2: +Z (0.00, 0.00, 1.00)
+  Covers: 79 faces total
+  New in this op: 1 faces
+  Face IDs: [20]
+============================================================
+
+============================================================
+COMPARISON SUMMARY
+============================================================
+Baseline Setups: 2
+Refined Setups:  2
+Reduction:       0 setup(s)
+
+No faces moved to earlier operations.
+
+============================================================
+DETAILED COVERAGE BY OPERATION (REFINED)
+============================================================
+
+Operation 1: +Y
+  New faces covered: 105
+  Access types:
+    adjacent_access: 2 faces
+    axis_aligned: 38 faces
+    head_on: 31 faces
+    side_cut: 34 faces
+
+Operation 2: +Z
+  New faces covered: 1
+  Access types:
+    axis_aligned: 1 faces

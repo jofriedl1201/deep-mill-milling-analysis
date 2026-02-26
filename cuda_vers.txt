@@ -1,0 +1,8 @@
+
+    Directory: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA
+
+Mode     LastWriteTime
+----     -------------
+d----      1/17/2026
+               6:09 PM
+

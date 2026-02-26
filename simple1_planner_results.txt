@@ -1,0 +1,82 @@
+============================================================
+SETUP PLANNER - Simple 1.step
+============================================================
+
+Loading B-Rep Graph...
+[FAST] Faces: 17, Time: 0.073s
+Graph: 17 faces, 32 edges
+
+Face Types:
+  Plane: 7
+  Cylinder: 10
+
+============================================================
+RUNNING SETUP PLANNER (Refined Configuration)
+============================================================
+Tolerances: head-on=15.0░, side-cut=15.0░, cyl=10.0░
+
+
+=== Computing DeepMill Coverage for 6 Orientations ===
+[DeepMillAudit] Preprocessing Geometry 2502297146576 (Mesh -> PointCloud -> Octree)...
+[DeepMillAudit] Running DeepMill Inference for axis (1.0, 0.0, 0.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  +X: 7/17 faces (41.2%) [head_on:2, side_cut:5]
+[DeepMillAudit] Geometry 2502297146576 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (-1.0, 0.0, 0.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  -X: 7/17 faces (41.2%) [head_on:2, side_cut:5]
+[DeepMillAudit] Geometry 2502297146576 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 1.0, 0.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  +Y: 9/17 faces (52.9%) [axis_aligned:2, head_on:2, side_cut:5]
+[DeepMillAudit] Geometry 2502297146576 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, -1.0, 0.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  -Y: 9/17 faces (52.9%) [axis_aligned:2, head_on:2, side_cut:5]
+[DeepMillAudit] Geometry 2502297146576 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 0.0, 1.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  +Z: 15/17 faces (88.2%) [axis_aligned:8, head_on:3, side_cut:4]
+[DeepMillAudit] Geometry 2502297146576 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 0.0, -1.0)
+    [Config] Head-on: 15.0░, Side-cut: 15.0░, Cyl: 10.0░
+  -Z: 15/17 faces (88.2%) [axis_aligned:8, head_on:3, side_cut:4]
+
+=== Computing Minimum Setup Cover ===
+  Operation 1: +Z covers 15 new faces
+  Operation 2: +Y covers 2 new faces
+
+============================================================
+DEEPMILL SETUP PLAN
+============================================================
+Total Setups Required: 2
+Total Faces: 17
+Covered: 17 (100.0%)
+
+Operation 1: +Z (0.00, 0.00, 1.00)
+  Covers: 15 faces total
+  New in this op: 15 faces
+  Face IDs (sample): [2, 3, 4, 5, 6] ...
+Operation 2: +Y (0.00, 1.00, 0.00)
+  Covers: 9 faces total
+  New in this op: 2 faces
+  Face IDs: [0, 1]
+============================================================
+
+============================================================
+SPINDLE POSITIONS REQUIRED
+============================================================
+
+Setup 1: +Z
+  Tool Axis: (0.000, 0.000, 1.000)
+  Faces machined in this setup: 15
+  Face IDs (first 10): [2, 3, 4, 5, 6, 7, 8, 9, 10, 11] ...
+
+Setup 2: +Y
+  Tool Axis: (0.000, 1.000, 0.000)
+  Faces machined in this setup: 2
+  Face IDs: [0, 1]
+
+============================================================
+TOTAL SPINDLE POSITIONS REQUIRED: 2
+============================================================

@@ -1,0 +1,103 @@
+Analysis Engine Started.
+
+=== System Backend Info ===
+Python Binding: OCP (Open Cascade Python) 7.8.1.1
+Open Cascade (OCCT) Version: 7.8.1 (Inferred from Binding)
+Backend Geometry Engine: Powered by native C++ code (Open Cascade Technology)
+=========================
+
+Received STEP file: c:\Users\jfrie\dev\Milling Analysis\Step Files\Left side Traitener.step
+Received Mesh file: c:\Users\jfrie\dev\cad_intelligence_engine\public\models\default_part.stl
+Attempting to load STEP file: c:\Users\jfrie\dev\Milling Analysis\Step Files\Left side Traitener.step
+STEP Loaded. Solids: 1, Faces: 106
+Total Part Volume (Geometric Fact): 368790.28 mm^3
+Attempting to load Mesh file...
+Mesh file loaded successfully.
+Mesh Vertices: 204
+Mesh Faces: 408
+Mesh BBox: Min(67.8481, -107.7077, -6.3500) Max(220.2481, 44.6923, 138.9948)
+Geometry Context Created. STEP Faces: 106, Mesh Triangles: 408
+
+=== Geometry Context Assumptions ===
+Coordinate Frame: Shared World Coordinate System
+STEP BBox Extents: Min(0.0000, -34.9250, -38.1000) Max(304.8000, 15.8750, 0.0000)
+Mesh BBox Extents: Min(67.8481, -107.7077, -6.3500) Max(220.2481, 44.6923, 138.9948)
+====================================
+
+=== Candidate Tool Axes ===
+Axis: (1.0000, 0.0000, 0.0000) | Source: Principal +X
+Axis: (-1.0000, 0.0000, 0.0000) | Source: Principal -X
+Axis: (0.0000, 1.0000, 0.0000) | Source: Principal +Y
+Axis: (0.0000, -1.0000, 0.0000) | Source: Principal -Y
+Axis: (0.0000, 0.0000, 1.0000) | Source: Principal +Z
+Axis: (0.0000, 0.0000, -1.0000) | Source: Principal -Z
+Axis: (0.0000, 0.0000, -1.0000) | Source: Planar Face Normal
+Axis: (-0.0000, 1.0000, -0.0000) | Source: Planar Face Normal
+Axis: (0.0000, 0.0000, 1.0000) | Source: Planar Face Normal
+Axis: (1.0000, 0.0000, 0.0000) | Source: Planar Face Normal
+Axis: (0.0000, -1.0000, 0.0000) | Source: Planar Face Normal
+Axis: (-1.0000, -0.0000, 0.0000) | Source: Planar Face Normal
+===========================
+
+=== Accessibility Analysis & Setup Partitioning (DeepMill Integrated) ===
+>>> DISCLAIMER: OUTPUT REPRESENTS GEOMETRIC FACTS ONLY. NO COSTING/PRICING IMPLICATIONS. <<<
+[DeepMillAudit] Dependency check failed. DeepMill disabled.
+Tool Diameter: 6.0mm
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (1, 0, 0)
+Axis(1.00, 0.00, 0.00) -> Acc: 50.0% (Vol: 500.00/1000.00)
+  -> Setup Direction: (1.00, 0.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 30 | Reachable Surface Area (Geo): 4409.81 mm^2 | Reachability Volume (Geo): 184395.14 mm^3 | Aligned Area: 2206.06 mm^2 | Perp Area: 2203.75 mm^2
+     Sample Face IDs: [6, 7, 8, 9, 21] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (-1, 0, 0)
+Axis(-1.00, 0.00, 0.00) -> Acc: 50.0% (Vol: 500.00/1000.00)
+  -> Setup Direction: (-1.00, 0.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 23 | Reachable Surface Area (Geo): 3382.90 mm^2 | Reachability Volume (Geo): 184395.14 mm^3 | Aligned Area: 2153.49 mm^2 | Perp Area: 1229.41 mm^2
+     Sample Face IDs: [0, 3, 11, 22, 25] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (0, 1, 0)
+Axis(0.00, 1.00, 0.00) -> Acc: 50.0% (Vol: 500.00/1000.00)
+  -> Setup Direction: (0.00, 1.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 32 | Reachable Surface Area (Geo): 11246.68 mm^2 | Reachability Volume (Geo): 184395.14 mm^3 | Aligned Area: 11246.68 mm^2 | Perp Area: 0.00 mm^2
+     Sample Face IDs: [2, 4, 10, 11, 12] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (0, -1, 0)
+Axis(0.00, -1.00, 0.00) -> Acc: 50.0% (Vol: 500.00/1000.00)
+  -> Setup Direction: (0.00, -1.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 11181.96 mm^2 | Reachability Volume (Geo): 184395.14 mm^3 | Aligned Area: 11181.96 mm^2 | Perp Area: 0.00 mm^2
+     Sample Face IDs: [18] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (0, 0, 1)
+Axis(0.00, 0.00, 1.00) -> Acc: 100.0% (Vol: 1000.00/1000.00)
+  -> Setup Direction: (0.00, 0.00, 1.00) | Tool: 6.0mm | Reachable Faces (Count): 18 | Reachable Surface Area (Geo): 11830.34 mm^2 | Reachability Volume (Geo): 368790.28 mm^3 | Aligned Area: 11729.57 mm^2 | Perp Area: 100.76 mm^2
+     Sample Face IDs: [3, 5, 7, 10, 23] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (0, 0, -1)
+Axis(0.00, 0.00, -1.00) -> Acc: 0.0% (Vol: 0.00/1000.00)
+  -> Setup Direction: (0.00, 0.00, -1.00) | Tool: 6.0mm | Reachable Faces (Count): 11 | Reachable Surface Area (Geo): 12265.54 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 12265.54 mm^2 | Perp Area: 0.00 mm^2
+     Sample Face IDs: [0, 1, 6, 78, 90] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (0.0, 0.0, -1.0)
+Axis(0.00, 0.00, -1.00) -> Acc: 0.0% (Vol: 0.00/1000.00)
+  -> Setup Direction: (0.00, 0.00, -1.00) | Tool: 6.0mm | Reachable Faces (Count): 11 | Reachable Surface Area (Geo): 12265.54 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 12265.54 mm^2 | Perp Area: 0.00 mm^2
+     Sample Face IDs: [0, 1, 6, 78, 90] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (-0.0, 1.0, -0.0)
+Axis(-0.00, 1.00, -0.00) -> Acc: 50.0% (Vol: 500.00/1000.00)
+  -> Setup Direction: (-0.00, 1.00, -0.00) | Tool: 6.0mm | Reachable Faces (Count): 32 | Reachable Surface Area (Geo): 11246.68 mm^2 | Reachability Volume (Geo): 184395.14 mm^3 | Aligned Area: 11246.68 mm^2 | Perp Area: 0.00 mm^2
+     Sample Face IDs: [2, 4, 10, 11, 12] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (0.0, 0.0, 1.0)
+Axis(0.00, 0.00, 1.00) -> Acc: 100.0% (Vol: 1000.00/1000.00)
+  -> Setup Direction: (0.00, 0.00, 1.00) | Tool: 6.0mm | Reachable Faces (Count): 18 | Reachable Surface Area (Geo): 11830.34 mm^2 | Reachability Volume (Geo): 368790.28 mm^3 | Aligned Area: 11729.57 mm^2 | Perp Area: 100.76 mm^2
+     Sample Face IDs: [3, 5, 7, 10, 23] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (1.0, 0.0, 0.0)
+Axis(1.00, 0.00, 0.00) -> Acc: 50.0% (Vol: 500.00/1000.00)
+  -> Setup Direction: (1.00, 0.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 30 | Reachable Surface Area (Geo): 4409.81 mm^2 | Reachability Volume (Geo): 184395.14 mm^3 | Aligned Area: 2206.06 mm^2 | Perp Area: 2203.75 mm^2
+     Sample Face IDs: [6, 7, 8, 9, 21] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (0.0, -1.0, 0.0)
+Axis(0.00, -1.00, 0.00) -> Acc: 50.0% (Vol: 500.00/1000.00)
+  -> Setup Direction: (0.00, -1.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 11181.96 mm^2 | Reachability Volume (Geo): 184395.14 mm^3 | Aligned Area: 11181.96 mm^2 | Perp Area: 0.00 mm^2
+     Sample Face IDs: [18] ...
+[DeepMillAudit] Request delegated to Fallback (Mock) for axis (-1.0, -0.0, 0.0)
+Axis(-1.00, -0.00, 0.00) -> Acc: 50.0% (Vol: 500.00/1000.00)
+  -> Setup Direction: (-1.00, -0.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 23 | Reachable Surface Area (Geo): 3382.90 mm^2 | Reachability Volume (Geo): 184395.14 mm^3 | Aligned Area: 2153.49 mm^2 | Perp Area: 1229.41 mm^2
+     Sample Face IDs: [0, 3, 11, 22, 25] ...
+=======================================================================
+
+=== DeepMill Execution Audit ===
+DeepMill Available : False
+Preprocessing Events: 0 (Should be ~1 per part)
+Cache Hits          : 0
+Inference Calls     : 0
+Fallback Calls      : 12
+================================
+Exiting cleanly.

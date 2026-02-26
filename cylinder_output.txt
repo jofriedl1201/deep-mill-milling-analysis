@@ -1,0 +1,76 @@
+Analyzing cylindrical faces in: Step Files/simple 1.step
+============================================================
+
+Found 10 cylindrical faces:
+
+Face 0:
+  Radius: 4.1275 mm
+  Surface Area: 1317.44 mm▓
+  Origin: Unknown
+  Axis: (0.00, 1.00, 0.00)
+  Estimated Height: 50.80 mm
+
+Face 1:
+  Radius: 4.1275 mm
+  Surface Area: 1317.44 mm▓
+  Origin: Unknown
+  Axis: (0.00, 1.00, 0.00)
+  Estimated Height: 50.80 mm
+
+Face 2:
+  Radius: 1.6250 mm
+  Surface Area: 32.42 mm▓
+  Origin: Unknown
+  Axis: (0.00, 0.00, -1.00)
+  Estimated Height: 3.17 mm
+
+Face 3:
+  Radius: 1.6250 mm
+  Surface Area: 32.42 mm▓
+  Origin: Unknown
+  Axis: (0.00, 0.00, -1.00)
+  Estimated Height: 3.17 mm
+
+Face 4:
+  Radius: 1.6250 mm
+  Surface Area: 32.42 mm▓
+  Origin: Unknown
+  Axis: (0.00, 0.00, -1.00)
+  Estimated Height: 3.17 mm
+
+Face 5:
+  Radius: 1.6250 mm
+  Surface Area: 32.42 mm▓
+  Origin: Unknown
+  Axis: (0.00, 0.00, -1.00)
+  Estimated Height: 3.17 mm
+
+Face 6:
+  Radius: 1.6250 mm
+  Surface Area: 32.42 mm▓
+  Origin: Unknown
+  Axis: (0.00, 0.00, -1.00)
+  Estimated Height: 3.17 mm
+
+Face 7:
+  Radius: 1.6250 mm
+  Surface Area: 32.42 mm▓
+  Origin: Unknown
+  Axis: (0.00, 0.00, -1.00)
+  Estimated Height: 3.17 mm
+
+Face 8:
+  Radius: 11.2000 mm
+  Surface Area: 223.43 mm▓
+  Origin: Unknown
+  Axis: (0.00, 0.00, -1.00)
+  Estimated Height: 3.17 mm
+
+Face 9:
+  Radius: 16.5000 mm
+  Surface Area: 5266.57 mm▓
+  Origin: Unknown
+  Axis: (0.00, 0.00, 1.00)
+  Estimated Height: 50.80 mm
+
+============================================================

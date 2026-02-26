@@ -1,0 +1,24 @@
+=== System Diagnosis Report ===
+
+[1] GPU & Driver:
+NVIDIA-SMI detected. Output snippet:
+  | NVIDIA-SMI 551.76                 Driver Version: 551.76         CUDA Version: 12.4     |
+  |   0  NVIDIA GeForce RTX 4050 ...  WDDM  |   00000000:01:00.0  On |                  N/A |
+
+[2] CUDA Toolkit:
+MISSING: nvcc (CUDA Toolkit) not found in PATH.
+
+[3] cuDNN:
+MISSING: CUDA_PATH environment variable not set.
+
+[4] PyTorch:
+Version: 2.9.1+cpu
+CUDA Available: False
+
+[5] Visual Studio Build Tools:
+PRESENT: VS/BuildTools detected at: C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools
+
+[6] CMake:
+PRESENT: cmake version 4.2.1
+
+===============================

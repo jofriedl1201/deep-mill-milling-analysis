@@ -1,0 +1,149 @@
+============================================================
+STEP 1: Generating Mesh from STEP
+============================================================
+Loading Step Files/simple 1.step...
+Exporting to STL...
+SUCCESS: Created temp_simple1.stl
+
+============================================================
+STEP 2: Running Full Analysis Engine
+============================================================
+Analysis Engine Started.
+
+=== System Backend Info ===
+Python Binding: OCP (Open Cascade Python) 7.8.1.1
+Open Cascade (OCCT) Version: 7.8.1 (Inferred from Binding)
+Backend Geometry Engine: Powered by native C++ code (Open Cascade Technology)
+=========================
+
+Received STEP file: Step Files/simple 1.step
+Received Mesh file: temp_simple1.stl
+Attempting to load STEP file: Step Files/simple 1.step
+STEP Loaded. Solids: 1, Faces: 17
+Total Part Volume (Geometric Fact): 202167.06 mm^3
+Attempting to load Mesh file...
+Mesh file loaded successfully.
+Mesh Vertices: 2528
+Mesh Faces: 5088
+Mesh BBox: Min(-0.0000, 78.2635, 0.0000) Max(92.0750, 129.0636, 53.9750)
+Geometry Context Created. STEP Faces: 17, Mesh Triangles: 5088
+
+=== Geometry Context Assumptions ===
+Coordinate Frame: Shared World Coordinate System
+STEP BBox Extents: Min(-0.0000, 78.2635, 0.0000) Max(92.0750, 129.0635, 53.9750)
+Mesh BBox Extents: Min(-0.0000, 78.2635, 0.0000) Max(92.0750, 129.0636, 53.9750)
+====================================
+
+=== Candidate Tool Axes ===
+Axis: (1.0000, 0.0000, 0.0000) | Source: Principal +X
+Axis: (-1.0000, 0.0000, 0.0000) | Source: Principal -X
+Axis: (0.0000, 1.0000, 0.0000) | Source: Principal +Y
+Axis: (0.0000, -1.0000, 0.0000) | Source: Principal -Y
+Axis: (0.0000, 0.0000, 1.0000) | Source: Principal +Z
+Axis: (0.0000, 0.0000, -1.0000) | Source: Principal -Z
+Axis: (1.0000, -0.0000, 0.0000) | Source: Planar Face Normal
+Axis: (0.0000, 0.0000, -1.0000) | Source: Planar Face Normal
+Axis: (-1.0000, 0.0000, 0.0000) | Source: Planar Face Normal
+Axis: (0.0000, 0.0000, 1.0000) | Source: Planar Face Normal
+Axis: (-0.0000, 1.0000, -0.0000) | Source: Planar Face Normal
+Axis: (0.0000, -1.0000, 0.0000) | Source: Planar Face Normal
+===========================
+
+=== Accessibility Analysis & Setup Partitioning (DeepMill Integrated) ===
+>>> DISCLAIMER: OUTPUT REPRESENTS GEOMETRIC FACTS ONLY. NO COSTING/PRICING IMPLICATIONS. <<<
+
+=== Generating B-Rep Graph (Canonical Representation) ===
+[FAST] Faces: 17, Time: 0.043s
+  BRepGraph: 17 faces, 32 edges | Types: [Plane:7, Cylinder:10] | Hash: abbd3629
+[FAST] Faces: 17, Time: 0.043s
+[FAST] Faces: 17, Time: 0.038s
+  Determinism Check: Deterministic: 2 runs produced hash abbd3629
+Tool Diameter: 6.0mm
+[DeepMillAudit] Preprocessing Geometry 1444921244688 (Mesh -> PointCloud -> Octree)...
+[DeepMillAudit] Running DeepMill Inference for axis (1, 0, 0)
+Axis(1.00, 0.00, 0.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (1.00, 0.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 2741.93 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 2741.93 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 2741.93 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-4.52 Max:4.64 Mean:0.00) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [10] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (-1, 0, 0)
+Axis(-1.00, 0.00, 0.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (-1.00, 0.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 2741.93 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 2741.93 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 2741.93 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-4.25 Max:4.12 Mean:0.01) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [12] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0, 1, 0)
+Axis(0.00, 1.00, 0.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (0.00, 1.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 4862.71 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4862.71 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4862.71 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-3.92 Max:3.87 Mean:-0.01) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [14] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0, -1, 0)
+Axis(0.00, -1.00, 0.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (0.00, -1.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 4862.71 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4862.71 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4862.71 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-4.50 Max:3.88 Mean:0.00) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [15] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0, 0, 1)
+Axis(0.00, 0.00, 1.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (0.00, 0.00, 1.00) | Tool: 6.0mm | Reachable Faces (Count): 3 | Reachable Surface Area (Geo): 6975.48 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4233.55 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4233.55 mm^2 | Perp Area: 2741.93 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-3.99 Max:4.15 Mean:-0.00) | BrepMFR Diagnostics: 3 Faces Classified
+     Sample Face IDs: [12, 13, 16] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0, 0, -1)
+Axis(0.00, 0.00, -1.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (0.00, 0.00, -1.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 4233.55 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4233.55 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4233.55 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-4.07 Max:4.12 Mean:-0.00) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [11] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (1.0, -0.0, 0.0)
+Axis(1.00, -0.00, 0.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (1.00, -0.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 2741.93 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 2741.93 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 2741.93 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-4.07 Max:4.30 Mean:0.01) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [10] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 0.0, -1.0)
+Axis(0.00, 0.00, -1.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (0.00, 0.00, -1.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 4233.55 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4233.55 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4233.55 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-4.32 Max:3.90 Mean:0.01) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [11] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (-1.0, 0.0, 9.64181644822681e-17)
+Axis(-1.00, 0.00, 0.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (-1.00, 0.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 3 | Reachable Surface Area (Geo): 6975.48 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 2741.93 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 2741.93 mm^2 | Perp Area: 4233.55 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-4.45 Max:4.30 Mean:0.00) | BrepMFR Diagnostics: 3 Faces Classified
+     Sample Face IDs: [12, 13, 16] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, 0.0, 1.0)
+Axis(0.00, 0.00, 1.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (0.00, 0.00, 1.00) | Tool: 6.0mm | Reachable Faces (Count): 3 | Reachable Surface Area (Geo): 6975.48 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4233.55 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4233.55 mm^2 | Perp Area: 2741.93 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-4.16 Max:5.03 Mean:0.01) | BrepMFR Diagnostics: 3 Faces Classified
+     Sample Face IDs: [12, 13, 16] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (-0.0, 1.0, -0.0)
+Axis(-0.00, 1.00, -0.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (-0.00, 1.00, -0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 4862.71 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4862.71 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4862.71 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-3.85 Max:4.16 Mean:-0.00) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [14] ...
+[DeepMillAudit] Geometry 1444921244688 found in cache.
+[DeepMillAudit] Running DeepMill Inference for axis (0.0, -1.0, 0.0)
+Axis(0.00, -1.00, 0.00) -> Acc: 0.0% (Vol: 0.00/0.00)
+  -> Setup Direction: (0.00, -1.00, 0.00) | Tool: 6.0mm | Reachable Faces (Count): 1 | Reachable Surface Area (Geo): 4862.71 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4862.71 mm^2 | Reachability Volume (Geo): 0.00 mm^3 | Aligned Area: 4862.71 mm^2 | Perp Area: 0.00 mm^2 | DeepMill Diagnostics: [Tensor] Shape:torch.Size([1, 1, 32, 32, 32]) Stats:(Min:-3.90 Max:4.12 Mean:-0.02) | BrepMFR Diagnostics: 1 Faces Classified
+     Sample Face IDs: [15] ...
+=======================================================================
+
+=== DeepMill Diagnostic Comparison ===
+Cross-Setup Tensor Statistics (Neutral Observation):
+  - Total Setups with Diagnostics: 12
+  - Signal Mean Variation: -0.0165 to 0.0108 (Delta: 0.0273)
+  - Signal Max Variation:  3.8688 to 5.0292
+  - Signal Min Variation:  -4.5189 to -3.8472
+======================================
+
+=== Diagnostic Correlation (Non-Decision) ===
+Descriptive relationship between Geometric Area and DeepMill Signal Mean:
+  - Setups with larger geometric reachable area tend to have Lower signal means.
+    (Avg Signal for Low Area: 0.0017 vs High Area: -0.0012)
+=============================================
+
+=== DeepMill Execution Audit ===
+DeepMill Available : True
+Preprocessing Events: 1 (Should be ~1 per part)
+Cache Hits          : 11
+Inference Calls     : 12
+Fallback Calls      : 0
+================================
+Exiting cleanly.
+
+============================================================
+COMPLETE!
+============================================================
